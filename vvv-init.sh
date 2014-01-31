@@ -14,8 +14,10 @@ then
 	mkdir htdocs
 	cd htdocs
 	wp core download --allow-root
-	wp core config --allow-root --dbname="sitename" --dbuser=wp --dbpass=wp --dbhost="localhost"
-	wp core install --allow-root --url=sitename.dev --title="SITE_NAME" --admin_user=mattbanks --admin_password=password --admin_email=matt@kernelcreativemedia.com
+	wp core config --allow-root --quiet --dbname="sitename" --dbuser=wp --dbpass=wp --dbhost="localhost" <<PHP
+define( 'WP_DEBUG', true );
+PHP
+	wp core install --allow-root --quiet --url=sitename.dev --title="SITE_NAME" --admin_user="mattbanks" --admin_password="password" --admin_email="matt@kernelcreativemedia.com"
 	cd ..
 	php wpsetup.php
 fi
