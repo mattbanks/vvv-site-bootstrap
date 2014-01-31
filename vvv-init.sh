@@ -17,6 +17,7 @@ then
 	wp core config --allow-root --dbname="sitename" --dbuser=wp --dbpass=wp --dbhost="localhost"
 	wp core install --allow-root --url=sitename.dev --title="SITE_NAME" --admin_user=mattbanks --admin_password=password --admin_email=matt@kernelcreativemedia.com
 	cd ..
+	php wpsetup.php
 fi
 
 # The Vagrant site setup script will restart Nginx for us
