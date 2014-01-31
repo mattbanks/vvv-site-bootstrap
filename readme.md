@@ -8,8 +8,8 @@ To get started:
 2. Do a find/replace for `sitename` and replace with the site slug text
 3. Do a find/replace for `SITE_NAME` and replace with the full name of the site
 4. Configure any site-specific options or any PHP code to run after install in `wpsetup.php`
-4. If your Vagrant box is running, from the Vagrant directory run `vagrant halt`
-5. Run `vagrant up --provision`
+5. If your Vagrant box is running, from the Vagrant directory run `vagrant halt`
+6. Run `vagrant up --provision`
 
 Visit http://sitename.dev (replace sitename with your site slug)
 
