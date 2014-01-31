@@ -1,6 +1,6 @@
 # VVV Site Bootstrap
 
-Bootstrap a new site in VVV using WP CLI and MySQL.
+Bootstrap a new site in [VVV](https://github.com/Varying-Vagrant-Vagrants/VVV) using [WP-CLI](wp-cli.org), PHP and MySQL.
 
 To get started:
 
