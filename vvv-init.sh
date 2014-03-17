@@ -18,11 +18,10 @@ then
 define( 'WP_DEBUG', true );
 PHP
 	wp core install --allow-root --quiet --url=sitename.dev --title="SITE_NAME" --admin_user="mattbanks" --admin_password="password" --admin_email="matt@kernelcreativemedia.com"
-	cd ..
-	wp option update --allow-root blogdescription ''
-	wp option update --allow-root start_of_week 0
-	wp option update --allow-root timezone_string 'America/New_York'
-	wp option update --allow-root permalink_structure '/%postname%/'
+	wp option update --allow-root --quiet blogdescription ''
+	wp option update --allow-root --quiet start_of_week 0
+	wp option update --allow-root --quiet timezone_string 'America/New_York'
+	wp option update --allow-root --quiet permalink_structure '/%postname%/'
 fi
 
 # The Vagrant site setup script will restart Nginx for us
