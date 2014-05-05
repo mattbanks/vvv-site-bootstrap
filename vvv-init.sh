@@ -31,9 +31,9 @@ PHP
 	wp plugin delete --allow-root --quiet hello
 
 	# Get plugins
-	wp plugin install wordpress-seo --activate
-	wp plugin install google-analytics-for-wordpress --activate
-	wp plugin install pods --activate
+	wp plugin install --allow-root --quiet wordpress-seo --activate
+	wp plugin install --allow-root --quiet google-analytics-for-wordpress --activate
+	wp plugin install --allow-root --quiet pods --activate
 
 	# Clone WordPress Starter Theme
 	cd wp-content/themes
@@ -53,7 +53,7 @@ PHP
 	grunt sass
 
 	# Activate theme
-	wp theme activate sitename
+	wp theme activate --allow-root --quiet sitename
 
 fi
 
